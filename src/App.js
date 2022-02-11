@@ -118,6 +118,7 @@ function App() {
         <TodoList todos={filteredTodos} toggleComplete={toggleComplete} removeTodo={removeTodo} />
       </section>
       <Footer
+        isVisible={todos.length > 0}
         todos={filteredTodos}
         setCurrentFilter={changeCurrentFilter}
         currentFilter={currentFilter}

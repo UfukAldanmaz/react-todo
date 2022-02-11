@@ -1,4 +1,4 @@
-function Footer({ todos, currentFilter, setCurrentFilter, clearCompleted }) {
+function Footer({ todos, currentFilter, setCurrentFilter, clearCompleted, isVisible }) {
     function handleChangeFilter(filter) {
         setCurrentFilter(filter);
     }
@@ -6,7 +6,7 @@ function Footer({ todos, currentFilter, setCurrentFilter, clearCompleted }) {
 
 
     return (
-        todos.length > 0 &&
+        isVisible &&
         <footer className="footer">
 
 
