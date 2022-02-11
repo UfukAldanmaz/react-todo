@@ -17,17 +17,17 @@ function Footer({ todos, currentFilter, setCurrentFilter, clearCompleted, isVisi
 
             <ul className="filters">
                 <li>
-                    <a className={currentFilter === "all" ? "selected" : ""} onClick={() => handleChangeFilter("all")}>
+                    <a href className={currentFilter === "all" ? "selected" : ""} onClick={() => handleChangeFilter("all")}>
                         All
                     </a>
                 </li>
                 <li>
-                    <a className={currentFilter === "active" ? "selected" : ""} onClick={() => handleChangeFilter("active")}>
+                    <a href className={currentFilter === "active" ? "selected" : ""} onClick={() => handleChangeFilter("active")}>
                         Active
                     </a>
                 </li>
                 <li>
-                    <a className={currentFilter === "completed" ? "selected" : ""} onClick={() => handleChangeFilter("completed")}>
+                    <a href className={currentFilter === "completed" ? "selected" : ""} onClick={() => handleChangeFilter("completed")}>
                         Completed
                     </a>
                 </li>
